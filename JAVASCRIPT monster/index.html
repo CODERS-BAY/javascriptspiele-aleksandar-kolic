@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="all/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Monster</title>
+
+</head>
+
+<body>
+    
+    <div class="image">
+        <div id="btn_home">
+        <div class="button"></i><a href="../index.html"><i class="fas fa-home"></i> </a></div> 
+        </div>  
+        <div id="image"></div>
+    </div>
+    <div id="verloren">
+        <p>SIE HABEN VERLOREN!!!</p>
+    </div>
+    <div id="gewonnen">
+        <p>BINGO!!! SIE HABEN GEWONHNEN</p>
+    </div>
+    <div id="invalid">INVALID INPUT
+        <div class="button" onclick="playAgain()">Reload</div>
+    </div>
+    <div class="erste" id="zweite">
+        <label>
+            <p>Anzahl der Versuche</p>
+            <input id="anzahl" name="anzahl" type="number" min="0">
+            </label>
+            <div>
+                <div class="btn_versuch" onclick="anzahlDerVersuche()">Click</div>
+            </div>
+    </div>
+    <div class="erste" id="erst">
+        <label>
+            <p>Anfangsgeschwindlichkeit</p><input id="speed" name="speed" type="number" min="0">
+        </label>
+        <label>
+            <p>Winkel</p><input id="winkel" name="winkel" type="number" min="1" max="90">
+        </label>
+        <select id="fallbescheuning" name="fallbescheuning">
+            <option value="9.81">
+                <p>Erde</p>
+            </option>
+            <option value="1.62">
+                <p>Mond</p>
+            </option>
+            <option value="3.69">
+                <p>Mars</p>
+            </option>
+            <option value="24.79">
+                <p>Jupiter</p>
+            </option>
+        </select>
+        </label>
+    </div>
+    <div class="btn_bg" id="btn">
+        <div class="button" onclick="getMonster()">Click</div>
+        <div class="button" onclick="playAgain()">Reload</div>
+    </div>
+    <div id="result"></div>
+    <script src="javascript/scrpit.js" type="text/javascript"></script>
+</body>
+
+</html>

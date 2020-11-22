@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: rgb(105, 72, 45);
+    display: table; /* so groß wie der Inhalt */
+    margin: 20px auto 0;
+    padding: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+body > div {
+    box-shadow: 1px 1px 2px#777;
+    display: table-cell;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    text-align: center;
+}

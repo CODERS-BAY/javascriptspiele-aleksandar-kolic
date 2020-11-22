@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&family=Nerko+One&display=swap');
+html,body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(32, 44, 32);
+}
+p {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    background-color: rgb(125, 125, 175);
+    -webkit-box-shadow: 6px 6px 12px 12px rgba(200, 179, 167, 0.75);
+    -moz-box-shadow: 6px 6px 12px 12px rgba(200, 179, 167, 0.75);
+    box-shadow: 6px 14px 12px 12px rgb(109 82 66 / 75%);
+    font-size: 26px;
+    text-shadow: 3px 8px 3px rgb(167 118 118);
+
+}
+.image {
+    align-items: center;
+    background-color: rgb(32, 44, 32);
+    height: 120px;
+    display: flex;
+    width: 100%;
+    padding: 0 30px;
+    
+}
+#img {
+    background-image: url(../../images/schereoben.png);
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+}
+#img img {
+        margin: 0 auto;
+    height: 60px;
+    height: 60px;
+}
+
+.erste {
+    background-image:url(../../images/schererules.JPG) ;
+    background-repeat:no-repeat;
+    background-size: cover;
+   height: 475px;
+   display: grid; 
+    margin: 0 auto;
+    width: 78%;
+}
+#erste {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 50px;
+    margin: 0   auto;
+}
+#zweite {
+   display: none;
+   padding: 3px 58px 6px 19px;
+   height: 80px;
+    justify-content: space-between;
+ }
+ .container {
+    background-color: #fff;
+    font-size: 20px;
+    box-shadow: 2px 2px 30px #777;
+    display: none; 
+    height: 62vh;
+    margin: 0 auto;
+    max-width: 740px;
+    padding: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 30%;
+    width: 80vw;
+  
+} 
+#verloren {
+    background-image: url(../../images/loser.jpg);
+    background-attachment: fixed;
+}
+#gewonnen {
+    align-content: center;
+    background-image: url(../../images/winners.jpg);
+    background-attachment: fixed;
+}
+.button {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    background-color: rgb(125, 125, 175);
+    padding: 10px 20px;
+    margin: 11px auto;
+    display: table;
+    border-radius: 10%;
+}
+.button:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
+} 
+#input {
+    
+    height: 275px;
+    display: unset;
+    padding: 60px 20px;
+    margin: 0 auto;
+}
+.spieler {
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-around;
+}
+label {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+input[type="number"] {
+    width: 15%;
+}
+.btnspieler {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    border: 1px black solid;
+    background-color: rgb(32, 44, 32);
+    border-radius: 29%;
+    display: table;
+    opacity: 0.7;
+}
+.btnspieler:hover {
+    height: 100px;
+    width: 100px;
+    opacity: 0.3;
+}
+#spieler,#computer {
+    display: table;
+    padding: 0 11px;
+    margin: 0 auto;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&family=Nerko+One&display=swap');
+#pge  {
+    border: none;
+    display: contents;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    background-color: none;
+}

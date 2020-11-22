@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png"> 
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="all/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Zahlen Raten</title>
+
+</head>
+
+<body>
+    <div class="btn"></i><a href="../index.html"><i class="fas fa-home"></i></a></div>   
+      <div id="gewonnen"><p>SIE HABEN GEWONNEN</p>
+    <p class="button" onclick="reload()">Reload</p>
+    </div>
+    <div id="notnull">Invalid input.<p class="button" onclick="reload()">Reload</p>
+</div>
+    <div id="verloren">
+        <p>SIE HABEN VERLOREN</p>
+        <p class="button" onclick="reload()">Reload</p>
+    </div>
+    <div id="alle">
+        <div id="step_1">
+            <div id="input1">
+                <p>Obere grenze</p>
+                <input id="obere" type="number" min="0">
+            </div>
+            <div id="input3">
+                <p>Anzahl der Versuche</p>
+                <input id="anzahlDerVersuche" type="number" min="0">
+                <div class="button" onclick="valueInput()">Input Value</div>
+            </div>
+        </div>
+        <div id="step_2">
+            <div id="input3" class="screen">
+                <p>Geratene Zahl</p>
+                <input id="gerateneZahl" type="number" min="0">
+                <div class="button" onclick="obereGraenze()">Spiel</div>
+            </div>
+        <div id="result"></div>
+        </div>
+    </div>
+    <script src="javascript/script.js" type="text/javascript"></script>
+</div>
+</body>
+
+</html>

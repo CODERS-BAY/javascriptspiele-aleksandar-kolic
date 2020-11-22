@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@900&family=Nerko+One&display=swap');
+html,body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(32, 44, 32);
+}
+p {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    background-color: rgb(125, 125, 175);
+    -webkit-box-shadow: 6px 6px 12px 12px rgba(200, 179, 167, 0.75);
+    -moz-box-shadow: 6px 6px 12px 12px rgba(200, 179, 167, 0.75);
+    box-shadow: 6px 14px 12px 12px rgb(109 82 66 / 75%);
+    font-size: 26px;
+    text-shadow: 3px 8px 3px rgb(167 118 118);
+
+}
+
+body > div {
+    font-size: 24px;
+    background: radial-gradient(circle, rgba(51,87,51,0.8018557764902836) 20%, rgba(71,55,55,1) 96%);
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    max-width: 600px;
+    margin:23px auto;
+    padding: 109px 26px;
+    text-align: center;
+}
+#verloren {
+    display: none;
+    width: 180vh;
+    height: 200px;
+    position: absolute;
+    left: 20;
+    margin: 0 auto;
+    padding: 20px 20px;
+    align-items: center;
+    background-color: rgb(224, 189, 189);
+    position: relative;
+    animation-name: non;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+#gewonnen {
+    display: none;
+    width: 180vh;
+    height: 200px;
+    position: absolute;
+    left: 20;
+    margin: 0 auto;
+    padding: 20px 20px;
+    align-items: center;
+    background-color: rgb(224, 189, 189);
+    position: relative;
+    animation-name: non;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+   
+}
+.btn a {
+    text-decoration: none;
+}
+.btn {
+    -webkit-border-radius: 64.9636064009233px;
+    -moz-border-radius: 64.9636064009233px;
+    border-radius: 64.9636064009233px;
+    background: rgb(140, 59, 149);
+    background: -moz-linear-gradient(270deg, rgb(140, 59, 149) 57%, rgb(82, 0, 131) 70%);
+    background: -webkit-linear-gradient(270deg, rgb(140, 59, 149) 57%, rgb(82, 0, 131) 70%);
+    background: -o-linear-gradient(270deg, rgb(140, 59, 149) 57%, rgb(82, 0, 131) 70%);
+    background: -ms-linear-gradient(270deg, rgb(140, 59, 149) 57%, rgb(82, 0, 131) 70%);
+    background: linear-gradient(180deg, rgb(140, 59, 149) 57%, rgb(82, 0, 131) 70%);
+    display: table-caption;
+    -webkit-box-shadow: -13px 16px 30px rgba(167, 174, 170, 0.29);
+    -moz-box-shadow:    -13px 16px 30px rgba(167, 174, 170, 0.29);
+    box-shadow:         -13px 16px 30px rgba(167, 174, 170, 0.29);
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.button {
+    -webkit-border-radius: 64.9636064009233px;
+    -moz-border-radius: 64.9636064009233px;
+    border-radius: 64.9636064009233px;
+    background: rgb(140, 59, 149);
+    background: -moz-linear-gradient(270deg, rgb(140, 59, 149) 57%, rgb(82, 0, 131) 70%);
+    background: -webkit-linear-gradient(270deg, rgb(140, 59, 149) 57%, rgb(82, 0, 131) 70%);
+    background: -o-linear-gradient(270deg, rgb(140, 59, 149) 57%, rgb(82, 0, 131) 70%);
+    background: -ms-linear-gradient(270deg, rgb(140, 59, 149) 57%, rgb(82, 0, 131) 70%);
+    background: linear-gradient(180deg, rgb(140, 59, 149) 57%, rgb(82, 0, 131) 70%);
+    display: table-caption;
+    -webkit-box-shadow: -13px 16px 30px rgba(167, 174, 170, 0.29);
+    -moz-box-shadow:    -13px 16px 30px rgba(167, 174, 170, 0.29);
+    box-shadow:         -13px 16px 30px rgba(167, 174, 170, 0.29);
+    padding: 7px 9px;
+    font-size: 16px;
+    display: unset;
+    cursor: pointer;
+  }
+  .button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+.result{
+    display: inline-flex;
+}
+
+.fas {
+    font-size: 20px;
+ }
+ @keyframes non {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
